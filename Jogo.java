@@ -13,10 +13,10 @@ public class Jogo {
     //10% de comer
    
     while(personagem.vivo()){
-      // if(!personagem.vivo()){
-      //     System.out.println("morreu");
-      //     break;
-      // }
+      if(!personagem.vivo()){
+          System.out.println("morreu");
+          break;
+      }
       int oQueFazer = gerador.nextInt(3); //[0..3[
         
         
@@ -46,7 +46,10 @@ public class Jogo {
     //   System.out.println("********************");
        Thread.sleep(3000);
     }
-  
+    if(!personagem.vivo()){
+      System.out.println("morreu");
+      
+  }
   
   }
 }

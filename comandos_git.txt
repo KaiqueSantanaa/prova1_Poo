@@ -1,1 +1,7 @@
 git clone https://github.com/professorbossini/20232_fatec_ipi_poo_jogo_cacador.git
+git init
+git config --local user.name "Pedro Lopes"
+git config --global init.defaultBranch main
+git config --global core.editor "code --wait"
+git add .
+git commit -a

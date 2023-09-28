@@ -1,4 +1,6 @@
 import java.lang.annotation.Retention;
+import java.util.Random;
+import java.util.random.RandomGenerator;
 
 public class Personagem {
  
@@ -7,6 +9,7 @@ public class Personagem {
   private int energia = 10;
   private int fome = 10;
   private int sono = 0;
+  private int item =4;
 
   //construtor: lista de parâmetros vazia
   // Personagem(){
@@ -33,6 +36,8 @@ public class Personagem {
     if(energia >= 2){
       System.out.println(nome + " caçando...");
       energia -= 2; // energia = energia - 2;
+     
+      item = item+1;
     }
     else{
       System.out.println (nome + " sem energia para caçar...");
@@ -67,16 +72,17 @@ public class Personagem {
 
   void exibirEstado(){
     System.out.printf(
-      "%s: e: %d, f: %d, s: %d\n",
+      "%s: e: %d, f: %d, s: %d, qt: %d\n",
       nome,
       energia,
       fome,
-      sono
+      sono,
+      item
     );
   }
  
   boolean vivo(){
-    System.out.println("morreu");
+  
    return energia>0;
    
   }
