@@ -87,4 +87,13 @@ public class Personagem {
    return energia>0;
    
   }
+  void atacar(Personagem alvo){
+    System.out.println(nome+" atacando "+ alvo.nome);
+    alvo.energia--;
+    if(alvo.energia == 0){
+      System.out.println(alvo.nome+" foi morto");
+    }
+    
+  }
+
 }
