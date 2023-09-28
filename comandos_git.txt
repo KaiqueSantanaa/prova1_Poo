@@ -5,3 +5,4 @@ git config --global init.defaultBranch main
 git config --global core.editor "code --wait"
 git add .
 git commit -a
+git commit -a
