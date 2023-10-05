@@ -1,10 +1,52 @@
+
+
 git clone https://github.com/professorbossini/20232_fatec_ipi_poo_jogo_cacador.git
+
 git init
+
 git config --local user.name "Pedro Lopes"
+
 git config --global init.defaultBranch main
+
 git config --global core.editor "code --wait"
+
 git add .
+
 git commit -a
+
+git status
+
 git commit -a
+
+git status
+
 git commit -a
+
+git status
+
 git commit -a
+
+git status
+
+git commit -a
+
+git tag v1.0.0 -a -m "jogo Esta Pronto"
+
+git tag
+
+git add .\README.md
+
+git commit --amend
+
+git remote add origin https://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@github.com/KaiqueSantanaa/prova1_Poo.git
+
+git push origin main
+
+git push --tags
+
+
+
+ 
+
+ 
+
