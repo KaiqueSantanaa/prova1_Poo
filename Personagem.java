@@ -17,10 +17,7 @@ public class Personagem {
   // }
 
 
-  Personagem(String nome){
-    this.nome = nome;
-  }
-
+ 
   Personagem(String nome, int energia, int fome, int sono){
     this.nome = nome;
     if (energia >= 0 && energia <= 10)
